@@ -11,22 +11,127 @@ html {
   box-sizing: border-box;
 }
 
-.body {
+body {
   width: 100%;
+  font-family: "Play", sans-serif;
 }
 
 .header {
+  height: 80vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(12, 4, 59, 0.8),
+      rgba(12, 4, 59, 0.5)
+    ),
+    url(img/bg.png);
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
+.videographer {
+  position: absolute;
+  width: 40%;
+  height: 70%;
+  object-fit: cover;
+  filter: grayscale(70%);
+  opacity: 0.3;
 
+  top: 15%;
+  right: 25%;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 3rem;
+  margin-right: 0.5rem;
+}
+.logo-text {
+  font-size: 2.6rem;
+}
 .navbar {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(74, 101, 255, 0.1);
 }
 
 .nav__list {
   display: flex;
+  list-style: none;
 }
 
-.
+.nav__item {
+  padding: 0 2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  height: 0.01rem;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__link:hover::after {
+  bottom: -40%;
+  width: 100%;
+  height: 0.2rem;
+  opacity: 1;
+}
+
+.titles-container {
+  height: calc(70vh - 7.3rem);
+  display: flex;
+  align-items: center;
+  margin-left: 35rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.titles__title {
+  font-size: 6rem;
+}
+.titles__subtitle {
+  margin-top: 15rem;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.titles__cta {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 1rem 2rem;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 3rem 0 1rem 0;
+}
+
+.btn-tab {
+  padding: 0 0.5rem;
+  margin: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  font-size: 2rem;
+  color: inherit;
+}
