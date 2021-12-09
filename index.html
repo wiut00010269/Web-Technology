@@ -20,33 +20,56 @@
     />
   </head>
   <body>
-    <header class="header">
+    <div class="modal-navbar">
+      <ul id="nav-list" class="nav__list-2 hidden">
+        <li class="nav__item">
+          <a href="#header" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#services" class="nav__link">Services</a>
+        </li>
+        <li class="nav__item">
+          <a href="#testimonials" class="nav__link">Testimonials</a>
+        </li>
+        <li class="nav__item">
+          <a href="#team" class="nav__link">Our Team</a>
+        </li>
+        <li class="rm-mg nav__item">
+          <a href="#contact" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <header id="header" class="header">
       <img class="videographer" src="img/videographer.jpg" alt="Videographer" />
       <nav class="navbar">
         <div class="logo-container">
           <img src="img/logo.png" alt="Logo" class="logo" />
           <h2 class="logo-text">VIDEOGRAPH</h2>
         </div>
-        <ul class="nav__list">
+        <ul id="nav-list" class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">Home</a>
+            <a href="#header" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">About</a>
+            <a href="#about" class="nav__link">About</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Services</a>
+            <a href="#services" class="nav__link">Services</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Testimonials</a>
+            <a href="#testimonials" class="nav__link">Testimonials</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Our Team</a>
+            <a href="#team" class="nav__link">Our Team</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Contact</a>
+            <a href="#contact" class="nav__link">Contact</a>
           </li>
         </ul>
+        <i class="btn-nav fas fa-bars"></i>
       </nav>
       <div class="titles-container">
         <div class="titles__tab">
@@ -65,7 +88,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="about">
+      <section id="about" class="about">
         <div class="about__images">
           <img
             src="img/about1.jpg"
@@ -110,7 +133,7 @@
           </p>
         </div>
       </section>
-      <section class="services">
+      <section id="services" class="services">
         <div class="whatwedo-container">
           <h2 class="wwd__sub-title">OUR SERVICES</h2>
           <h1 class="wwd__title">WHAT WE DO?</h1>
@@ -160,7 +183,7 @@
           </div>
         </div>
       </section>
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <div class="tess">
           <h3 class="tes__subtitle">LOVED BY CLIENTS</h3>
           <h1 class="tes__title">WHAT CLIENTS SAY?</h1>
@@ -229,7 +252,7 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section id="team" class="team">
         <h3 class="team__subtitle">NICE TO MEET</h3>
         <h1 class="team__title">OUR TEAM</h1>
         <div class="team-container">
@@ -255,7 +278,7 @@
           />
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <h1 class="contact__title">Contact us</h1>
         <div class="contact-info">
           <div class="c-info-box">
