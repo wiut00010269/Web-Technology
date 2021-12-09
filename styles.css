@@ -124,6 +124,11 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   margin: 3rem 0 1rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.titles__cta:hover {
+  background-color: rgba(12, 4, 59, 0.5);
 }
 
 .btn-tab {
@@ -134,4 +139,10 @@ body {
   border-bottom: 1px solid #fff;
   font-size: 2rem;
   color: inherit;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-tab:hover {
+  transform: scale(1.1);
 }
